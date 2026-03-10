@@ -350,8 +350,20 @@ nav {
    ========================================== */
 #recenzii { overflow: hidden; background: var(--surface-light); }
 .testimonial-wrapper { overflow: hidden; width: 100%; padding: 4rem 0; }
-.testimonials-grid { display: flex; gap: 3rem; width: max-content; }
-.testimonial-card { flex: 0 0 500px; background: var(--primary-bg); padding: 5rem 4rem; border-radius: 40px; border: 1px solid var(--glass-border); box-shadow: 0 30px 60px rgba(0,0,0,0.04); }
+.testimonials-grid { 
+    display: flex; 
+    gap: 3rem; 
+    width: max-content;
+    padding-right: 3rem; /* Extra gap for perfect seamless loop */
+}
+.testimonial-card { 
+    flex: 0 0 500px; 
+    background: var(--primary-bg); 
+    padding: 5rem 4rem; 
+    border-radius: 40px; 
+    border: 1px solid var(--glass-border); 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.04); 
+}
 .quote-icon { color: var(--accent-gold); font-size: 3rem; opacity: 0.5; margin-bottom: 2.5rem; }
 .testimonial-text { font-size: 1.4rem; font-style: italic; margin-bottom: 4rem; color: var(--primary-text); line-height: 1.7; font-family: var(--font-heading); font-weight: 500; }
 .client-info { display: flex; align-items: center; gap: 25px; }
@@ -445,6 +457,10 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     .care-grid { gap: 2rem; }
     .care-card, .subscription-card { padding: 3rem 2rem; border-radius: 30px; }
     .care-list li { font-size: 0.9rem; }
+    
+    .testimonials-grid { gap: 1.5rem; padding-right: 1.5rem; }
+    .testimonial-card { flex: 0 0 320px; padding: 3rem 2rem; border-radius: 30px; }
+    .testimonial-text { font-size: 1.1rem; margin-bottom: 2rem; }
     
     .bento-grid { grid-template-columns: 1fr; grid-auto-rows: 300px; }
     .item-large, .item-wide, .item-box { grid-column: span 1; grid-row: span 1; }
