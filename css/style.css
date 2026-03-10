@@ -207,10 +207,33 @@ nav {
     margin-bottom: 2rem; font-weight: 800; display: block; 
     padding: 0 5%;
 }
-.marquee-container { display: flex; width: 200%; }
-.marquee-content { display: flex; justify-content: space-around; min-width: 100%; animation: scroll 120s linear infinite; gap: 4rem; padding: 0 2rem; }
-.marquee-content span { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 400; color: var(--primary-text); opacity: 0.7; letter-spacing: 2px; font-style: italic; white-space: nowrap; flex-shrink: 0; }
-@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+.marquee-container { 
+    display: flex; 
+    width: max-content; 
+    animation: scroll 30s linear infinite; /* Faster and smoother */
+    will-change: transform;
+}
+.marquee-content { 
+    display: flex; 
+    align-items: center;
+    gap: 6rem; /* Increased gap for clarity */
+    padding-right: 6rem;
+    flex-shrink: 0;
+}
+.marquee-content span { 
+    font-family: var(--font-heading); 
+    font-size: 2.8rem; 
+    font-weight: 500; 
+    color: var(--primary-text); 
+    opacity: 0.8; 
+    letter-spacing: 1px; 
+    font-style: italic; 
+    white-space: nowrap; 
+}
+@keyframes scroll { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); } 
+}
 
 /* ==========================================
    7. ABOUT
@@ -402,9 +425,9 @@ select.form-control {
     background-size: 1.2rem;
     padding-right: 40px !important;
 }
-select.form-control option { background: #0A0A0B; color: #fff; padding: 15px; }
+select.form-control option { background: #fff; color: var(--primary-text); padding: 15px; }
 .form-submit { grid-column: span 2; display: flex; justify-content: space-between; align-items: center; margin-top: 3rem; }
-.whatsapp-alt { font-size: 0.9rem; color: rgba(255,255,255,0.4); letter-spacing: 1px; }
+.whatsapp-alt { font-size: 0.9rem; color: var(--primary-text); opacity: 0.6; letter-spacing: 1px; }
 .whatsapp-alt a { color: var(--accent-gold); font-weight: 700; text-decoration: underline; text-underline-offset: 6px; }
 
 /* ==========================================
