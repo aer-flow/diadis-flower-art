@@ -74,8 +74,25 @@ document.addEventListener("DOMContentLoaded", () => {
           .fromTo(".hero-img-container img", 
             { scale: 1.2 }, 
             { scale: 1, duration: 1.8, ease: "power2.out" }, "-=1.2")
-          .fromTo(".hero-title .word", { y: 50, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.05, duration: 0.8, ease: "power4.out" }, "-=0.8")
-          .fromTo(".gsap-fade-up", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: "power2.out" }, "-=0.4");
+          .fromTo(".hero-title.floral-reveal .word", 
+            { 
+                opacity: 0, 
+                filter: "blur(20px)",
+                y: 30,
+                scale: 0.9,
+                webkitMaskPosition: "0 100%" 
+            }, 
+            { 
+                opacity: 1, 
+                filter: "blur(0px)",
+                y: 0,
+                scale: 1,
+                webkitMaskPosition: "0 0%",
+                stagger: 0.1, 
+                duration: 1.5, 
+                ease: "power2.out" 
+            }, "-=1.0")
+          .fromTo(".gsap-fade-up", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: "power2.out" }, "-=0.6");
 
     gsap.to(".hero-img-container img", {
         yPercent: 10, ease: "none", // Reduced from 20
