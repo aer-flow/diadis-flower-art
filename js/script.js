@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 stagger: 0.08, 
                 duration: 1.2, 
                 ease: "power3.out",
-                clearProps: "all" /* Clear everything to be safe */
+                clearProps: "filter"
             }, "-=1.0")
           .fromTo(".gsap-fade-up", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: "power2.out" }, "-=0.6");
 
