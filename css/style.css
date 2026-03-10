@@ -447,11 +447,44 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
 .social-icons a:hover { color: var(--accent-gold); opacity: 1; transform: translateY(-5px); }
 
 .wa-float {
-    position: fixed; bottom: 50px; right: 50px; width: 75px; height: 75px; background-color: var(--surface-dark); color: var(--accent-gold); border: 1px solid var(--accent-gold); border-radius: 100px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; z-index: 1000; box-shadow: 0 20px 40px rgba(202,138,4,0.2); transition: var(--transition-smooth);
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+    width: 65px; 
+    height: 65px; 
+    background-color: var(--surface-dark); 
+    color: var(--accent-gold); 
+    border: 1px solid var(--accent-gold); 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 2.22rem; 
+    z-index: 1000; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
+    transition: var(--transition-smooth);
 }
-.wa-float:hover { background-color: var(--accent-gold); color: #fff; transform: translateY(-10px) scale(1.1); }
-.wa-float::before { content: "Comandă pe WhatsApp"; position: absolute; right: 100px; background: var(--surface-dark); color: #fff; padding: 12px 24px; border-radius: 16px; font-size: 0.95rem; opacity: 0; pointer-events: none; transition: var(--transition-smooth); white-space: nowrap; border: 1px solid rgba(255,255,255,0.1); font-weight: 600; letter-spacing: 1px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-.wa-float:hover::before { opacity: 1; transform: translateX(-15px); }
+.wa-float:hover { background-color: var(--accent-gold); color: #fff; transform: translateY(-5px) scale(1.05); }
+.wa-float::before { 
+    content: "Comandă pe WhatsApp"; 
+    position: absolute; 
+    right: 80px; 
+    background: #4a3434; /* Soft dark brown for contrast */
+    color: #fff; 
+    padding: 8px 16px; 
+    border-radius: 12px; 
+    font-size: 0.8rem; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: var(--transition-smooth); 
+    white-space: nowrap; 
+    border: 1px solid rgba(255,255,255,0.1); 
+    font-weight: 500; 
+    letter-spacing: 0.5px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateX(10px);
+}
+.wa-float:hover::before { opacity: 1; transform: translateX(0); }
 
 /* ==========================================
    14. RESPONSIVE QUERIES
@@ -533,4 +566,13 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     }
     .form-submit { margin-top: 2rem; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; }
     .btn-gold { width: 100% !important; padding: 1.2rem !important; }
+    
+    .wa-float { 
+        bottom: 25px; 
+        right: 25px; 
+        width: 55px; 
+        height: 55px; 
+        font-size: 1.8rem; 
+    }
+    .wa-float::before { display: none; } /* Label is too intrusive on small mobile screens */
 }
