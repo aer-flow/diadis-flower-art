@@ -83,13 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 
             { 
                 opacity: 1, 
-                filter: "blur(0px)",
+                filter: "none",
                 y: 0,
                 scale: 1,
-                stagger: 0.08, 
-                duration: 1.2, 
-                ease: "power3.out",
-                clearProps: "filter"
+                stagger: 0.1, 
+                duration: 1.5, 
+                ease: "power2.out"
             }, "-=1.0")
           .fromTo(".gsap-fade-up", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: "power2.out" }, "-=0.6");
 
