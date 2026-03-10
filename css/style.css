@@ -190,7 +190,6 @@ nav {
 .hero-title { font-size: clamp(3rem, 7vw, 6.5rem); margin-bottom: 1.5rem; }
 .hero-title.floral-reveal .word {
     display: inline-block;
-    filter: blur(15px);
     transform: translateY(20px) scale(0.98);
     opacity: 0;
 }
