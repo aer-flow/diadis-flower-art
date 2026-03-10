@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Plante de Interior | Diadis Flower Art</title>
+    <meta name="description" content="Adu natura în casa ta cu selecția noastră de plante de interior. Diadis Flower Art Cluj-Napoca.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../css/style.css?v=202603100104">
+    <style>
+        .service-detail-hero {
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            background-color: var(--surface-dark);
+        }
+        .service-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .service-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+        .service-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 5%;
+        }
+        .content-section {
+            padding: 6rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor"></div>
+
+    <!-- NAVBAR -->
+    <nav class="gsap-nav">
+        <a href="../index.html" class="logo">
+            <img src="../logo.jpg" alt="Diadis Flower Art Logo" style="height: 50px; width: auto; margin-bottom: 5px;">
+            Diadis Flower Art
+            <span>Design Floral & Cadouri</span>
+        </a>
+        <div class="nav-links">
+            <a href="../index.html#acasa" class="nav-item">Acasă</a>
+            <a href="../index.html#poveste" class="nav-item">Despre Noi</a>
+            <a href="../index.html#servicii" class="nav-item">Colecții</a>
+            <a href="../index.html#programare" class="btn-gold" style="padding: 0.6rem 1.8rem; margin-left: 1rem;">Comandă</a>
+        </div>
+    </nav>
+
+    <!-- SERVICE HERO -->
+    <section class="service-detail-hero">
+        <div class="service-hero-bg gs-reveal-img">
+            <img src="../628113316_1849806992625025_9168777906652032261_n.jpg" alt="Plante Interior" loading="eager" decoding="async">
+        </div>
+        <div class="service-hero-content">
+            <a href="../index.html#servicii" class="back-btn gsap-fade-up"><i class="fa-solid fa-arrow-left"></i> Înapoi la colecții</a>
+            <h1 class="section-title gsap-fade-up" style="color: #fff; margin-bottom: 1rem;">Plante de Interior</h1>
+            <p class="gsap-fade-up" style="font-size: 1.2rem; opacity: 0.8;">Aducem natura și prospețimea în spațiul tău personal.</p>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="content-section">
+        <div class="content-grid">
+            <div class="gs-fade-up">
+                <h2 class="section-title" style="font-size: 2.2rem;">Oază de Verdeață</h2>
+                <p>Plantele de interior nu sunt doar elemente de decor, ci surse de viață și energie pentru casa ta. La Diadis Flower Art, selectăm plante sănătoase și rezistente, menite să purifice aerul și să aducă un sentiment de liniște și armonie în orice încăpere.</p>
+                <p style="margin-top: 1.5rem;">Oferim o varietate de specii, de la plante suculente ușor de întreținut până la arbori de interior impunători, toate însoțite de sfaturi specializate pentru îngrijirea lor corectă.</p>
+            </div>
+            <div class="gs-reveal-img" style="border-radius: 20px; overflow: hidden; aspect-ratio: 4/3;">
+                <img src="../625902261_1851707445768313_1151463998596584157_n.jpg" alt="Plante Detaliu" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="content-section" style="background: var(--surface-light);">
+        <h2 class="section-title text-center" style="text-align: center;">Beneficiile plantelor în casă</h2>
+        <div class="journey-grid" style="color: var(--primary-text);">
+            <div class="step-card gs-fade-up" style="background: transparent; border: none;">
+                <div class="step-num" style="background: white;">01</div>
+                <h3 style="color: var(--primary-text);">Purificarea Aerului</h3>
+                <p style="color: rgba(0,0,0,0.6);">Plantele absorb toxinele și eliberează oxigen proaspăt, îmbunătățind calitatea aerului.</p>
+            </div>
+            <div class="step-card gs-fade-up" style="background: transparent; border: none; transition-delay: 0.1s;">
+                <div class="step-num" style="background: white;">02</div>
+                <h3 style="color: var(--primary-text);">Reducerea Stresului</h3>
+                <p style="color: rgba(0,0,0,0.6);">Prezența verdelui natural reduce anxietatea și îmbunătățește starea de spirit.</p>
+            </div>
+            <div class="step-card gs-fade-up" style="background: transparent; border: none; transition-delay: 0.2s;">
+                <div class="step-num" style="background: white;">03</div>
+                <h3 style="color: var(--primary-text);">Estetică Vie</h3>
+                <p style="color: rgba(0,0,0,0.6);">Completează designul interior cu o notă organică și rafinată.</p>
+            </div>
+            <div class="step-card gs-fade-up" style="background: transparent; border: none; transition-delay: 0.3s;">
+                <div class="step-num" style="background: white;">04</div>
+                <h3 style="color: var(--primary-text);">Durabilitate</h3>
+                <p style="color: rgba(0,0,0,0.6);">Spre deosebire de florile tăiate, plantele la ghiveci cresc și înfrumusețează spațiul ani la rând.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Partial/Link) -->
+    <footer style="text-align: center; padding: 4rem 5%;">
+        <h2 class="section-title">Vrei să transformi casa într-o mini-grădină?</h2>
+        <a href="../index.html#programare" class="btn-gold">Alege o Plantă</a>
+        <div style="margin-top: 4rem; opacity: 0.5; font-size: 0.9rem;">
+            <p>&copy; 2026 Diadis Flower Art Cluj-Napoca.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="../js/script.js?v=202603100104"></script>
+</body>
+</html>
